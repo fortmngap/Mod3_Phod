@@ -1,0 +1,82 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.navbar {
+	background-color: #999;
+    border: 0;
+    border-top: 2px solid #000;    
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+}
+.navbar-header {
+	color: #000;
+}
+.navbar-header>#name {
+    font-size: 2.5em;
+    color: #000;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #000;
+}
+
+#nav-list {
+	background-color: #fff;
+	font-size: 1.5em;
+	border: 2px solid #000;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-collapse #Beef {
+	border-top: 2px solid #000;
+}
+.navbar-collapse #Sushi {
+	border-top: 2px solid #000;
+}
+
+#subheading {
+    font-size: 3em;
+    color: #000;
+}
+#content {
+    background-color: #999;
+    color: #000;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+/*Media Queries*/
+/****** Large devices only (atleast 992 pixels wide) ******/
+@media (min-width: 992px) {
+	.navbar-header>#name {
+		width: 31%;
+		float: left;
+		margin-right: 0;
+		margin-left: 2%;
+	}	
+}
+/******* Medium devices only (around 768px and 991px)*******/
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-header>#name {
+		width: 48%;
+		float: left;
+		margin-right: 0;
+		margin-left: 2%;
+	}
+}
+/******** Small devices only *********/
+@media (max-width: 767px) {
+	.navbar-header>#name {
+		width: 98%;
+		float: left;
+		margin-right: 0;
+		margin-left: 2%;
+	}
+	#content {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
